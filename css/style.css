@@ -52,7 +52,7 @@ a {
 }
 
 a:hover {
-  color: #735397;
+  color: #c593ff;
 }
 
 .logo {
@@ -66,7 +66,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background: rgba(0, 0, 0, 0.493);
+  background: #0f0f0f60;
   height: 60px;
   width: 100vw;
   font-size: larger;
@@ -115,7 +115,7 @@ main {
     width: 100vw;
     height: 92vh;
     font-size: x-large;
-    background: #73539780;
+    background: #2f2f2f;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -168,7 +168,7 @@ main {
   --white-color: #fff;
   --dark-color: #222;
   --body-bg-color: #fff;
-  --section-bg-color: #73539791;
+  --section-bg-color: #0f0f0fa0;
   --navigation-item-hover-color: #3b5378;
 
   --text-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
@@ -268,13 +268,14 @@ header.sticky{
   position: relative;
   width: 100%;
   height: 100vh;
+  background-position: right bottom;
 }
 
 .bg-slider .swiper-slide img{
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  background-position: center;
+  background-position: right bottom;
   background-size: cover;
   pointer-events: none;
 }
@@ -294,6 +295,13 @@ header.sticky{
   margin-bottom: 20px;
   transform: translateY(-50px);
   opacity: 0;
+  background: #0f0f0f15;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--box-shadow);
 }
 
 .swiper-slide-active .text-content .title{
@@ -311,7 +319,7 @@ header.sticky{
 
 .swiper-slide .text-content p{
   max-width: 700px;
-  background: #73539754;
+  background: #0f0f0f15;
   backdrop-filter: blur(10px);
   text-shadow: var(--text-shadow);
   padding: 20px;
