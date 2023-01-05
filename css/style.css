@@ -1,7 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  text-align: justify;
   
+}
+#about p {
+  background-color: rgba(133 78 140 / 60%);
+  color: #f5f5f5;
+  border-radius: 20px;
+  margin: 40px;
 }
 em {
   font-size: 1.2em;
@@ -24,10 +31,11 @@ em {
 }
 
 #foto-gabi {
+  margin: 40px;
   max-width: 350px;
   max-height: 350px;
   border-radius: 300px;
-  
+  box-shadow: 0 20px 40px rgb(0 0 0 / 20%);
 }
 #logo-ub, #logo-av, #logo-ba {
   max-width: 300px;
@@ -37,11 +45,11 @@ em {
 
 #about {
   display: flex;
-  height: 100vh;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  margin: 0 5vw;
+  padding: 15vh 0;
+  color: #7f7f7f;
 }
 h3{
   font-size: 2.5em;
@@ -54,6 +62,7 @@ h3{
 #about p{
   font-size: 1.2em;
   padding: 40px;
+  box-shadow: 0 20px 40px rgb(0 0 0 / 20%);
 }
 
 
@@ -510,9 +519,7 @@ header.sticky{
 @media screen and (max-width: 1100px){
 
 
-  .section{
-    padding: 25px 50px;
-  }
+  
 
   .media-icons{
     right: 0;
@@ -530,11 +537,12 @@ header.sticky{
 
 /*======= Media queries (max-width: 785px) =======*/
 @media screen and (max-width: 785px){
-
-
-  .section{
-    padding: 25px 20px;
+  .footer-distributed #projetos #about {
+    margin-top: 300px;
   }
+
+
+
 
   .media-icons{
     margin-right: 20px;
@@ -623,6 +631,7 @@ header.sticky{
 
 .container2 .card .slide.slide2 {
   position: relative;
+  background: #f5f5f5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -630,7 +639,7 @@ header.sticky{
   box-sizing: border-box;
   transition: .8s;
   transform: translateY(-100px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
 .container2 .card:hover .slide.slide2{
@@ -665,8 +674,9 @@ header.sticky{
 }
 
 #projetos {
-  height: 100vh;
-  width: 100vw;
+  background: rgb(133 78 140 / 60%);
+  color: #f5f5f5;
+  padding: 40px 0;
 }
 .icon img {
   max-width: 200px;
@@ -687,7 +697,7 @@ footer {
   width: 100%;
   display: inline-block;
   background: #333;
-  height: 50vh;
+  
   text-align: center;
   font-size: 22px;
   font-weight: 700;
@@ -695,7 +705,7 @@ footer {
 }
 
 .footer-distributed{
-  background: #666;
+  background: rgba(72, 33, 77, 0.603);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -818,7 +828,7 @@ footer {
 
 .footer-distributed .footer-company-about{
   line-height: 20px;
-  color:  #92999f;
+  color:  #caccce;
   font-size: 13px;
   font-weight: normal;
   margin: 0;
@@ -857,8 +867,10 @@ footer {
 
 @media (max-width: 880px) {
 
-  .footer-distributed{
+  .footer-distributed #projetos #about{
     font: bold 14px sans-serif;
+    height: auto;
+    margin-top: 750px;
   }
 
   .footer-distributed .footer-left,
